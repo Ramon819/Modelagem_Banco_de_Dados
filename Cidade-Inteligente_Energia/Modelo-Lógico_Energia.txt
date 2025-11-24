@@ -1,0 +1,138 @@
+ tipo_energia
+
+PK: id_tipo
+Atributos:
+
+nome_tipo
+
+ categoria_energia
+
+PK: id_categoria
+FK: id_tipo → tipo_energia(id_tipo)
+Atributos:
+
+nome_categoria
+
+Relacionamento:
+
+Cada Categoria de Energia pertence a 1 Tipo de Energia
+
+1 Tipo de Energia pode ter várias Categorias
+(1:N)
+
+ status_fonte
+
+PK: id_status
+Atributos:
+
+descricao
+
+ fonte_energia
+
+PK: id_fonte
+FK:
+
+id_categoria → categoria_energia(id_categoria)
+
+id_status → status_fonte(id_status)
+
+Atributos:
+
+nome_fonte
+
+capacidade_mw
+
+Relacionamentos:
+
+Cada Fonte pertence a uma Categoria (1:N)
+
+Cada Fonte possui um Status (1:N)
+
+ status_linha
+
+PK: id_status
+Atributos:
+
+descricao
+
+ linha_transmissao
+
+PK: id_linha
+FK: id_status → status_linha(id_status)
+
+Atributos:
+
+tensao_kv
+
+comprimento_km
+
+capacidade_mw
+
+Relacionamento:
+
+Cada Linha tem um Status (1:N)
+
+ falha_linha
+
+PK: id_falha
+Atributos:
+
+descricao
+
+ linha_falha
+
+(Tabela Associativa)
+
+PK composta: (id_linha, id_falha, data_registro)
+FKs:
+
+id_linha → linha_transmissao(id_linha)
+
+id_falha → falha_linha(id_falha)
+
+Atributos:
+
+data_registro (timestamp)
+
+Relacionamento:
+
+Uma Linha pode ter várias Falhas
+
+Uma Falha pode ocorrer em várias Linhas
+
+Relacionamento N:N com histórico (por causa da data)
+
+ nivel_tensao
+
+PK: id_nivel
+Atributos:
+
+descricao
+
+ linha_nivel_tensao
+
+(Tabela Associativa)
+
+PK composta: (id_linha, id_nivel)
+FKs:
+
+id_linha → linha_transmissao(id_linha)
+
+id_nivel → nivel_tensao(id_nivel)
+
+Relacionamento:
+
+Uma Linha pode ter vários Níveis de Tensão
+
+Um Nível de Tensão pode se aplicar a várias Linhas
+
+Relacionamento N:N
+
+ Resumo dos Relacionamentos
+Entidade	Relacionamento	Tipo
+tipo_energia → categoria_energia	1:N	Um tipo tem várias categorias
+categoria_energia → fonte_energia	1:N	Uma categoria tem várias fontes
+status_fonte → fonte_energia	1:N	Um status pode ser usado por várias fontes
+status_linha → linha_transmissao	1:N	Um status é associado a várias linhas
+linha_transmissao ↔ falha_linha (via linha_falha)	N:N	Uma linha tem várias falhas e vice-versa
+linha_transmissao ↔ nivel_tensao (via linha_nivel_tensao)	N:N	Uma linha pode ter vários níveis de tensão
