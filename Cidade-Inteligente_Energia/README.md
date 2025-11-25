@@ -1,4 +1,4 @@
-📄 README — Banco de Dados de Energia e Linhas de Transmissão
+📄 Banco de Dados de Energia e Linhas de Transmissão
 
 Este projeto define o modelo de banco de dados responsável por organizar informações sobre fontes de energia, linhas de transmissão, falhas, níveis de tensão e seus respectivos status operacionais.
 O objetivo é criar uma estrutura robusta, normalizada e clara para análise e manutenção do sistema elétrico.
@@ -115,3 +115,4 @@ Categorizar linhas por nível de tensão
 Criar uma base sólida para dashboards, relatórios e análises
 
 É um modelo útil para sistemas de monitoramento elétrico, supervisão energética, smart grid e estudos acadêmicos.
+
