@@ -1,70 +1,72 @@
-🗄️ Estrutura de Banco de Dados
+# 🗄️ Estrutura de Banco de Dados
 
-Este repositório reúne todos os materiais, exercícios, scripts SQL e projetos desenvolvidos durante meus estudos sobre Estrutura de Banco de Dados.
-O objetivo é registrar minha evolução, praticar conceitos fundamentais e criar uma base sólida para projetos futuros que dependem de modelagem e manipulação de dados.
+> **Portfólio de Estudos e Modelagem de Dados**
 
-📘 Objetivo do Repositório
+Este repositório reúne todos os materiais, exercícios, scripts SQL e projetos desenvolvidos durante meus estudos sobre **Estrutura de Banco de Dados**.
 
-Este repositório foi criado para:
+O objetivo é registrar minha evolução, praticar conceitos fundamentais e criar uma base sólida para projetos futuros que dependem de modelagem eficiente e manipulação de dados.
 
-Praticar comandos SQL essenciais (DDL, DML, DQL e DCL)
+---
 
-Desenvolver e armazenar modelos conceituais, lógicos e físicos
+## 🛠️ Tecnologias e Ferramentas
 
-Criar bancos de dados completos para estudo
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Workbench](https://img.shields.io/badge/MySQL_Workbench-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-Registrar atividades da disciplina / curso técnico ou faculdade
+As ferramentas e tecnologias exploradas neste repositório incluem:
+* **SGBDs:** MySQL, MariaDB e PostgreSQL.
+* **Modelagem:** MySQL Workbench, BrModelo e Draw.io.
 
-Servir como referência pessoal para projetos futuros
-🧠 Conteúdos Estudados
+---
 
-Este repositório aborda:
+## 📘 Objetivos do Repositório
 
-✔️ Conceitos Fundamentais
+Este espaço foi criado para centralizar meu aprendizado em:
+* ✅ **Prática de SQL:** Execução de comandos essenciais (DDL, DML, DQL e DCL).
+* ✅ **Modelagem:** Desenvolvimento de modelos conceituais, lógicos e físicos.
+* ✅ **Projetos Completos:** Criação de bancos de dados funcionais para estudo de caso.
+* ✅ **Documentação:** Registro de atividades acadêmicas e exercícios técnicos.
 
-Dados × Informação
+---
 
-Tipos de banco de dados
+## 🧠 Conteúdos Estudados
 
-Modelos de dados e normalização
+O repositório aborda desde a teoria básica até consultas complexas:
 
-✔️ SQL (Structured Query Language)
+### 1. Conceitos Fundamentais
+* Dados vs. Informação.
+* Tipos de banco de dados (Relacionais e Não-Relacionais).
+* Teoria da Normalização e Modelos de Dados.
 
-DDL – CREATE, DROP, ALTER
+### 2. Linguagem SQL (Structured Query Language)
+* **DDL (Data Definition):** `CREATE`, `DROP`, `ALTER`.
+* **DML (Data Manipulation):** `INSERT`, `UPDATE`, `DELETE`.
+* **DQL (Data Query):** `SELECT`, filtros (`WHERE`), ordenação e agregações.
+* **DCL (Data Control):** `GRANT`, `REVOKE`.
 
-DML – INSERT, UPDATE, DELETE
+### 3. Modelagem de Dados
+* **DER:** Diagrama Entidade-Relacionamento.
+* **Regras de Negócio:** Cardinalidade e Integridade.
+* **Chaves:** Primária (PK), Estrangeira (FK) e Composta.
+* **Normalização:** Aplicação das formas normais (1FN, 2FN, 3FN).
 
-DQL – SELECT com filtros, ordenação e agregações
+### 4. Projetos Práticos
+* Criação de schemas completos.
+* População de tabelas com dados de teste.
+* Consultas avançadas utilizando `JOINs`, `HAVING` e Subqueries.
 
-DCL – GRANT, REVOKE
+---
 
-✔️ Modelagem de Dados
+## 📚 Status do Repositório
 
-Diagrama Entidade-Relacionamento
+> **Em constante atualização** 🔄
 
-Cardinalidade / Integridade
+Novos projetos, scripts de exercícios e melhorias na modelagem serão adicionados conforme avanço nos estudos e na disciplina.
 
-Chaves primária, estrangeira, composta
+---
 
-Normalização (1FN, 2FN, 3FN)
+Estudante de Ciência da Computação, focado em construir arquiteturas de dados sólidas e eficientes.
 
-✔️ Projetos Práticos
-
-Criação de bancos completos
-
-População de dados
-
-Consultas avançadas (JOINs, HAVING, Subqueries)
-
-🛠️ Tecnologias Utilizadas
-
-MySQL / MariaDB
-
-PostgreSQL (em alguns exercícios)
-
-Ferramentas de modelagem como Draw.io, MySQL Workbench ou BrModelo
-
-📚 Status do Repositório
-
-Em constante atualização enquanto avanço nos estudos.
-Novos projetos, exercícios e melhorias serão adicionados conforme evoluo.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ramonm819)
